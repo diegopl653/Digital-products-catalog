@@ -1,0 +1,20 @@
+---
+import Logo from "../assets/Logo.astro";
+import Cart from "../assets/Cart.astro";
+import Search from "../assets/Search.astro";
+---
+
+<header class="h-auto w-full bg-primary px-8 py-6 flex justify-between items-center fixed">
+  <article class="flex items-center gap-6">
+    <Logo classProp="w-16 h-auto" />
+    <h1 class="font-brand text-2xl">Hornito <br /> Postrero</h1>
+  </article>
+  <div class="flex gap-10 opacity-40">
+    <Cart classProp="w-10 h-auto" />
+    <article
+      class="w-80 h-10 rounded-xl bg-white border-neutral-500 justify-end border flex items-center px-3"
+    >
+      <Search classProp="w-6 h-auto" />
+    </article>
+  </div>
+</header>

@@ -1,0 +1,26 @@
+---
+import { Image } from "astro:assets";
+
+import SideArrow from "../../assets/SideArrow.astro";
+
+import exampleImage from "../../assets/images/imageExampleN1.png";
+---
+
+<section class="pt-28 w-full">
+  <h2 class="text-center my-10 font-thin text-4xl tracking-[0.3em]">
+    Novedades
+  </h2>
+  <article class="flex w-fit mx-auto">
+    <SideArrow classProp="w-20 h-auto opacity-30" />
+    <div class="w-[84em] h-[35em] bg-slate-500 mx-auto">
+      <Image
+        src={exampleImage}
+        alt="Imagen de ejemplo"
+        class="object-cover h-full w-full"
+      />
+      <div class="h-3 w-[500px] bg-neutral-300 cursor-pointer" onclick="window.location.href='/'"
+      ></div>
+    </div>
+    <SideArrow classProp="w-20 h-auto rotate-180 opacity-30" />
+  </article>
+</section>
